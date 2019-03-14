@@ -88,7 +88,7 @@ async Task RemovePizza(Pizza configuredPizza)
 }
 ```
 
-Update the `OnRemoved` parameter on the `ConfiguredPizzaItem.cshtml` to be a `Func<Task>` so that it supports async.
+Update the `OnRemoved` parameter on the `ConfiguredPizzaItem` to be a `Func<Task>` so that it supports async.
 
 ```csharp
     [Parameter] Func<Task> OnRemoved { get; set; }
